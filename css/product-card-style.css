@@ -1,3 +1,28 @@
+/*
+Instructions on CSS Values Used:
+1. HTML body background color is black
+2. Font colors used are – Black and Light Gray
+3. Available colors are – black, red, and beige (You can write the color name as-is while coding)
+4. Padding on all sides on right sub-container i.e. product info container is 20px.
+5. Separation between product card heading and subheading is 15px.
+6. Separation between product card subheading and product description is 20px.
+7. Padding from left side on product description is 50px.
+8. Separation between product description and Available colors content is 20px.
+9. In the available colors section, padding on all sides is 20px
+10. Separation between available colors and purchase is 20px.
+11. Separation between price sub-section and the end of the parent container is 20px.
+12. Width and Height of available color containers is 20 by 20 px.
+13. Font Size of product heading: 32px
+14. Font size of product subheading: 18px
+15. Font size of product description: 14px
+16. Font size of the text – “Available colors”: 14px
+17. Font size of the price value – 32px
+18. Width and height of the button is 150px by 40px, respectively.
+19. Width of overall parent container is 800px
+20. Height of overall parent container is 500px
+21. Separation of the top of the parent container from the top of the browser window is 120px.
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +41,9 @@ body {
 
 .product-card {
   margin: 0 auto;
-  margin-top: 120px;
-  height: 500px;
-  width: 800px;
+  margin-top: 120px; /* 21 */
+  width: 800px; /* 19 */
+  height: 500px; /* 20 */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -41,27 +66,25 @@ body {
 .right-info-col {
   width: 50%;
   height: 100%;
-}
-
-.right-info-col {
-  padding: 20px;
+  padding: 20px; /* 4 */
 }
 
 .right-info-col h3 {
   color: black;
-  font-size: 32px;
-  margin-bottom: 15px;
+  font-size: 32px; /* 13 */
+  margin-bottom: 15px; /* 5 */
 }
 
 .right-info-col h5 {
-  margin-bottom: 18px;
+  margin-bottom: 20px; /* 6 */
+  font-size: 18px; /* 14 */
 }
 
 .right-info-col p {
   color: black;
-  font-size: 14px;
-  padding-left: 50px;
-  margin-bottom: 20px;
+  font-size: 14px; /* 15 */
+  padding-left: 50px; /* 7 */
+  margin-bottom: 20px; /* 8 */
 }
 
 .available-colors {
@@ -69,9 +92,15 @@ body {
   justify-content: space-between;
   align-items: center;
   vertical-align: middle;
-  padding: 20px;
-  margin-bottom: 20px;
-  font-size: 14px;
+  padding: 20px; /* 9 */
+
+  /* This is not in the instructions,
+  but this aligns the available colors with the product description
+  just like the image given */
+  padding-left: 50px;
+
+  margin-bottom: 20px; /* 10 */
+  font-size: 14px; /* 16 */
 }
 
 .available-colors span {
@@ -82,7 +111,7 @@ body {
 .available-colors button {
   border: none;
   margin: 0 10px;
-  width: 20px;
+  width: 20px; /* 12 */
   height: 20px;
   border-radius: 50%;
 }
@@ -104,17 +133,17 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* 11 */
 }
 
 .price h4 {
   color: black;
-  font-size: 32px;
+  font-size: 32px; /* 17 */
 }
 
 .buy-btn {
+  width: 150px; /* 18 */
   height: 40px;
-  width: 150px;
   background-color: black;
   color: white;
   border-radius: 10px;
